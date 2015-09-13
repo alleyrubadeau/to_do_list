@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="/style.css"/>
+<nav>
+  <a href="/item/new">Add New To Do</a>
+</nav>
+
+<h1>Alley's to do...</h1>
+{{#item}}
+<div class='deleteDiv'>
+  <form action='item/{{_id}}/delete' method='post'>
+    <button class='deleteButton' type='submit'>Delete</button>
+</div>
+
+<a href="/item/{{_id}}">{{item}}</a>
+
+<div class = 'editDiv'>
+  <a href='/item/{{_id}}/edit'>
+    <button class='editButton' type='button'>Edit item</button>
+  </a>
+</div><br />
+<!-- {{#each comments}}
+
+<a href="/item/{{../_id}}/comment/{{commentId}}">{{this.comment}}</a>  <br><br>
+
+{{/each}}
+
+
+<div>
+  <p>Add Comment</p>
+  <form action="/item/{{_id}}/comments" method="post">
+    Comment<input type='text' name='comment'>
+    <input type="submit">
+  </form>
+
+</div> -->
+
+
+
+
+
+{{/item}}
+<form class="" action="/" method="post">
+  <input type="text" placeholder="Add a new To Do" name='item'>
+    <input type="submit">
+</form>

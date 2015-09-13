@@ -1,0 +1,23 @@
+
+{{#item}}
+<a href='/'>
+  <button type="button" name="button">Home</button>
+</a>
+{{item}}
+
+{{#each comments}}
+
+<a href="/item/{{../_id}}/comment/{{commentId}}">{{this.comment}}</a>  <br><br>
+
+{{/each}}
+
+
+<div>
+  <p>Add Comment</p>
+  <form action="/item/{{_id}}/comments" method="post">
+    Comment<input type='text' name='comment'>
+    <input type="submit">
+  </form>
+
+</div>
+{{/item}}

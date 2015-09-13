@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.editButton {
+  background: green;
+  border-radius: 5px;
+  padding: 2px;
+  display: inline-block;
+}
+.deleteButton {
+  background: red;
+  border-radius: 5px;
+  padding: 2px;
+
+}
+.editDiv {
+  display: inline-block;
+
+}
+.deleteDiv {
+  display: inline-block;
+}
